@@ -1,0 +1,6 @@
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+ticket1.print();
+ Ticket Aylesbury Price :  Issued Sun Oct 18 19:25:32 BST 2020
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+ticket1.print();
+ Ticket Aylesbury Price : 220 Issued Sun Oct 18 19:28:23 BST 2020
