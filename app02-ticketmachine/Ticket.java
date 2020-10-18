@@ -29,4 +29,13 @@ public class Ticket
         issueDateTime = new Date();
     }
 
+    /**
+     * This is the print method that will be used to print out the ticket.
+     */
+    public void print()
+    {
+        System.out.println(" Ticket " + destination + 
+        " Price : " + price + 
+        " Issued " + issueDateTime);
+    }
 }
