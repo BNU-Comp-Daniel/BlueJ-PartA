@@ -144,4 +144,33 @@ public class TicketMachine
         balance = 0;
         return amountToRefund;
     }
+    
+    public void printAllTickets()
+    {
+        System.out.println("The following three destinations are available");
+        aylesburyTicket.print();
+        amershamTicket.print();
+        highwycombeTicket.print();
+        System.out.println("Please select your ticket destination");
+    }
+    
+    public void selectTicket(String whereTo)
+    {
+        if(whereTo.startsWith("Ayl"))
+        {
+            issuedTicket = aylesburyTicket;
+        }
+        else if(whereTo.startsWith("Ame"))
+        {
+            
+        }
+        else if(whereTo.startsWith("Hig"))
+        {
+            
+        }
+        else
+        {
+            
+        }
+    }
 }
