@@ -145,6 +145,9 @@ public class TicketMachine
         return amountToRefund;
     }
     
+    /**
+     * This allows the customer to see all the available tickets.
+     */
     public void printAllTickets()
     {
         System.out.println("The following three destinations are available");
@@ -154,6 +157,9 @@ public class TicketMachine
         System.out.println("Please select your ticket destination");
     }
     
+    /**
+     * This allows the customer to select the ticket.
+     */
     public void selectTicket(String whereTo)
     {
         if(whereTo.startsWith("Ayl"))
