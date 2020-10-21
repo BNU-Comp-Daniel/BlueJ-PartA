@@ -1,0 +1,17 @@
+TicketMachine ticketMa1 = new TicketMachine(330);
+ticketMa1.printAllTickets();
+The following three destinations are available
+ Ticket Aylesbury Price : 220 Issued Wed Oct 21 14:18:56 BST 2020
+ Ticket Amersham Price : 300 Issued Wed Oct 21 14:18:56 BST 2020
+ Ticket High Wycombe Price : 330 Issued Wed Oct 21 14:18:56 BST 2020
+Please select your ticket destination
+ticketMa1.insertMoney(500);
+ticketMa1.selectAyelsburyTicket();
+ticketMa1.selectHighwycombeTicket();
+ticketMa1.selectAmershamTicket();
+ticketMa1.getPrice()
+    returned int 330
+ticketMa1.getBalance()
+    returned int 500
+ticketMa1.refundBalance()
+    returned int 500
