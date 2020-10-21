@@ -158,7 +158,7 @@ public class TicketMachine
     }
     
     /**
-     * This allows the customer to select the ticket.
+     * This allows the customer to select a ticket.
      */
     public void selectTicket(String whereTo)
     {
