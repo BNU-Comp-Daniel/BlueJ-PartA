@@ -88,4 +88,13 @@ public class Student
     {
         System.out.println(name + ", student ID: " + id + ", credits: " + credits);
     }
+    
+    /**
+     * This is the method that will add the course to the student and the
+     * student shall then be enrolled on that course.
+     */
+    public void enrolOnCourse(Course course)
+    {
+      this.course = course;  
+    }
 }
