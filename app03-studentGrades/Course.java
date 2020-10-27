@@ -88,4 +88,13 @@ public class Course
         
         return Grades.X;
     }
+    
+    public void printAllModules()
+    {
+        System.out.println("Modules on Course");
+        module1.print();
+        module2.print();
+        module3.print();
+        module4.print();
+    }
 }
