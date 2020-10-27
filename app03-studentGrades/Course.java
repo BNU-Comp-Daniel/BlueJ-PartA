@@ -31,9 +31,24 @@ public class Course
        module4 = new Module("Web Development", "CO456");
     }
     
-    public void addModule(Module module, int moduleNumber)
+    public void addMark(int mark, int moduleNumber)
     {
-        
+       if(moduleNumber == 1)
+       {
+          module1.awardMark(mark); 
+       }
+       if(moduleNumber == 2)
+       {
+          module2.awardMark(mark); 
+       }
+       if(moduleNumber == 3)
+       {
+          module3.awardMark(mark); 
+       }
+       if(moduleNumber == 4)
+       {
+          module4.awardMark(mark); 
+       }
     }
     
     /**
