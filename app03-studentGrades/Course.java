@@ -1,6 +1,7 @@
 
 /**
- * Write a description of class Course here.
+ * This is the course that the four modules will be added to as well as
+ * the course that the student will be enrolled on.
  *
  * @author (Daniel Hale)
  * @version (27/10/2020)
@@ -21,8 +22,7 @@ public class Course
     private Grades finalGrade;
 
     /**
-     * Constructor for objects of class Course
-     * Contains the course title and the course code number.
+     * This will add the course name and the course code.
      */
     public Course(String title, String codeNumber)
     {
@@ -35,6 +35,9 @@ public class Course
        module4 = new Module("Web Development", "CO456");
     }
     
+    /**
+     * This will award the mark for the modules.
+     */
     public void addMark(int mark, int moduleNumber)
     {
        if(moduleNumber == 1)
@@ -63,6 +66,9 @@ public class Course
      System.out.println("Course: " + title + " " + codeNumber);
     }
     
+    /**
+     * This allows the marks to be converted into grades. 
+     */
     public Grades convertToGrade(int mark)
     {
         if((mark >= 0) && (mark < 39))
@@ -89,6 +95,9 @@ public class Course
         return Grades.X;
     }
     
+    /**
+     * This allows all modules on a course to be printed.
+     */
     public void printAllModules()
     {
         System.out.println("Modules on Course");

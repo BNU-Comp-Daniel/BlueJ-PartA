@@ -1,9 +1,10 @@
 
 /**
- * Enumeration class Grades - write a description of the enum class here
+ * Enumeration class Grades - These are the grades that will come as a
+ * result of the marks.
  *
- * @author (your name here)
- * @version (version number or date here)
+ * @author (Daniel Hale)
+ * @version (27/10/2020)
  */
 public enum Grades
 {
