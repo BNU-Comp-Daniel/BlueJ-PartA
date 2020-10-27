@@ -1,0 +1,17 @@
+Student student1 = new Student("Peter Parker", "24681012");
+Course course2 = new Course("Computing", "G400");
+student1.enrolOnCourse(course2);
+Module module1 = new Module("Programming Concepts", "CO452");
+module1.awardMark(48);
+course2.printAllModules();
+Modules on Course
+Module: CO452Programming Concepts Mark = 0
+Module: CO450Computer Architectures Mark = 0
+Module: CO455User Experience Mark = 0
+Module: CO456Web Development Mark = 0
+module1.print();
+Module: CO452Programming Concepts Mark = 48
+course2.convertToGrade(70)
+    returned Object A
+student1.print();
+Peter Parker, student ID: 24681012, credits: 0
