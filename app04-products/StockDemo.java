@@ -40,6 +40,7 @@ public class StockDemo
     {
         manager.printAllProducts();
         demoDeliverProducts();
+        manager.printAllProducts();
     }
     
     /**
@@ -49,7 +50,10 @@ public class StockDemo
      */
     private void demoDeliverProducts()
     {
-        
+        for(int id = 101; id < 110; id++)
+        {
+            manager.deliverProduct(id, 5);
+        }
     }
     
     /**
