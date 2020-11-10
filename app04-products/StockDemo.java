@@ -1,3 +1,4 @@
+import java.util.Random;
 /**
  * Demonstrate the StockManager and Product classes.
  * The demonstration becomes properly functional as
@@ -11,7 +12,9 @@ public class StockDemo
 {
     // The stock manager.
     private StockManager manager;
-
+    
+    private Random randomGenerator;
+    
     /**
      * Create a StockManager and populate it with a few
      * sample products.
@@ -19,7 +22,7 @@ public class StockDemo
     public StockDemo(StockManager manager)
     {
         this.manager = manager;
-        
+        randomGenerator = new Random();
         manager.addProduct(new Product(101,  "Playstation 5"));
         manager.addProduct(new Product(102,  "Xbox Series X"));
         manager.addProduct(new Product(103,  "Google Stadia"));
@@ -50,9 +53,12 @@ public class StockDemo
      */
     private void demoDeliverProducts()
     {
+        int quantity = 0;
+        
         for(int id = 101; id < 111; id++)
         {
-            manager.deliverProduct(id, 5);
+            quantity = randomGenerator.nextInt(8);
+            manager.deliverProduct(id, quantity);
         }
     }
     
