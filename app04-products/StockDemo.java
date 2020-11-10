@@ -33,47 +33,23 @@ public class StockDemo
     }
     
     /**
+     * This will run the tests that need to be completed in order to show
+     * that the rquirements have been met.
+     */
+    public void runDemo()
+    {
+        manager.printAllProducts();
+        demoDeliverProducts();
+    }
+    
+    /**
      * Provide a very simple demonstration of how a StockManager
      * might be used. Details of one product are shown, the
      * product is restocked, and then the details are shown again.
      */
-    public void demo()
+    private void demoDeliverProducts()
     {
-        // Show details of all of the products.
-        manager.printProduct(101);
-        manager.printProduct(102);
-        manager.printProduct(103);
-        manager.printProduct(104);
-        manager.printProduct(105);
-        manager.printProduct(106);
-        manager.printProduct(107);
-        manager.printProduct(108);
-        manager.printProduct(109);
-        manager.printProduct(110);
         
-        // Take delivery of 5 items of one of the products.
-        manager.delivery(101, 5);
-        manager.delivery(102, 5);
-        manager.delivery(103, 5);
-        manager.delivery(104, 5);
-        manager.delivery(105, 5);
-        manager.delivery(106, 5);
-        manager.delivery(107, 5);
-        manager.delivery(108, 5);
-        manager.delivery(109, 5);
-        manager.delivery(110, 5);
-        
-        // Show the list of all products after delivery.
-        manager.printProduct(101);
-        manager.printProduct(102);
-        manager.printProduct(103);
-        manager.printProduct(104);
-        manager.printProduct(105);
-        manager.printProduct(106);
-        manager.printProduct(107);
-        manager.printProduct(108);
-        manager.printProduct(109);
-        manager.printProduct(110);
     }
     
     /**
