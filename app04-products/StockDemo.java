@@ -18,7 +18,8 @@ public class StockDemo
      */
     public StockDemo(StockManager manager)
     {
-        manager = new StockManager();
+        this.manager = manager;
+        
         manager.addProduct(new Product(101,  "Playstation 5"));
         manager.addProduct(new Product(102,  "Xbox Series X"));
         manager.addProduct(new Product(103,  "Google Stadia"));
@@ -40,12 +41,39 @@ public class StockDemo
     {
         // Show details of all of the products.
         manager.printProduct(101);
+        manager.printProduct(102);
+        manager.printProduct(103);
+        manager.printProduct(104);
+        manager.printProduct(105);
+        manager.printProduct(106);
+        manager.printProduct(107);
+        manager.printProduct(108);
+        manager.printProduct(109);
+        manager.printProduct(110);
         
         // Take delivery of 5 items of one of the products.
         manager.delivery(101, 5);
+        manager.delivery(102, 5);
+        manager.delivery(103, 5);
+        manager.delivery(104, 5);
+        manager.delivery(105, 5);
+        manager.delivery(106, 5);
+        manager.delivery(107, 5);
+        manager.delivery(108, 5);
+        manager.delivery(109, 5);
+        manager.delivery(110, 5);
         
         // Show the list of all products after delivery.
         manager.printProduct(101);
+        manager.printProduct(102);
+        manager.printProduct(103);
+        manager.printProduct(104);
+        manager.printProduct(105);
+        manager.printProduct(106);
+        manager.printProduct(107);
+        manager.printProduct(108);
+        manager.printProduct(109);
+        manager.printProduct(110);
     }
     
     /**
