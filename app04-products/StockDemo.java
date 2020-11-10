@@ -50,7 +50,7 @@ public class StockDemo
      */
     private void demoDeliverProducts()
     {
-        for(int id = 101; id < 110; id++)
+        for(int id = 101; id < 111; id++)
         {
             manager.deliverProduct(id, 5);
         }
