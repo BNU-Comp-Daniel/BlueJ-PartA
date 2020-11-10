@@ -1,0 +1,51 @@
+StockManager manager = new StockManager();
+StockDemo stockDem2 = new StockDemo(manager);
+stockDem2.runDemo();
+
+Hale's Stock List
+=================
+
+101: Playstation 5 stock level: 0
+102: Xbox Series X stock level: 0
+103: Google Stadia stock level: 0
+104: Nintendo Switch stock level: 0
+105: Apple iPhone X stock level: 0
+106: Samsung Galaxy S20 stock level: 0
+107: Playstation 4 Pro stock level: 0
+108: Playstation 3 Slim stock level: 0
+109: Xbox 360 Elite stock level: 0
+110: Gamecube stock level: 0
+
+
+Hale's Stock List
+=================
+
+101: Playstation 5 stock level: 6
+102: Xbox Series X stock level: 7
+103: Google Stadia stock level: 1
+104: Nintendo Switch stock level: 3
+105: Apple iPhone X stock level: 7
+106: Samsung Galaxy S20 stock level: 4
+107: Playstation 4 Pro stock level: 6
+108: Playstation 3 Slim stock level: 2
+109: Xbox 360 Elite stock level: 4
+110: Gamecube stock level: 7
+
+Attempt to restock Xbox Series X with a non-positive amount: 0
+Attempt to restock Nintendo Switch with a non-positive amount: 0
+Attempt to restock Xbox 360 Elite with a non-positive amount: 0
+
+Hale's Stock List
+=================
+
+101: Playstation 5 stock level: 7
+102: Xbox Series X stock level: 7
+103: Google Stadia stock level: 2
+104: Nintendo Switch stock level: 3
+105: Apple iPhone X stock level: 9
+106: Samsung Galaxy S20 stock level: 5
+107: Playstation 4 Pro stock level: 9
+108: Playstation 3 Slim stock level: 3
+109: Xbox 360 Elite stock level: 4
+110: Gamecube stock level: 9
+

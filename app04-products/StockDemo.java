@@ -44,6 +44,8 @@ public class StockDemo
         manager.printAllProducts();
         demoDeliverProducts();
         manager.printAllProducts();
+        demoSellProducts();
+        manager.printAllProducts();
     }
     
     /**
@@ -57,7 +59,7 @@ public class StockDemo
         
         for(int id = 101; id < 111; id++)
         {
-            quantity = randomGenerator.nextInt(8);
+            quantity = randomGenerator.nextInt(8) ;
             manager.deliverProduct(id, quantity);
         }
     }
@@ -74,23 +76,6 @@ public class StockDemo
         if(product != null) 
         {
             System.out.println(product.toString());
-        }
-    }
-    
-    /**
-     * Sell one of the given item.
-     * Show the before and after status of the product.
-     * @param id The ID of the product being sold.
-     */
-    public void sellProduct(int id)
-    {
-        Product product = getProduct(id);
-        
-        if(product != null) 
-        {
-            showDetails(id);
-            product.sellOne();
-            showDetails(id);
         }
     }
     
@@ -118,5 +103,21 @@ public class StockDemo
     public StockManager getManager()
     {
         return manager;
+    }
+    
+        /**
+     * Provide a very simple demonstration of how a StockManager
+     * might be used. Details of one product are shown, the
+     * product is restocked, and then the details are shown again.
+     */
+     private void demoSellProducts()
+    {
+        int quantity = 0;
+        
+        for(int id = 101; id < 111; id++)
+        {
+            quantity = randomGenerator.nextInt(4) ;
+            manager.deliverProduct(id, quantity);
+        }
     }
 }
