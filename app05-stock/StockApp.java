@@ -14,6 +14,8 @@ public class StockApp
     
     private StockManager manager;
     
+    private StockDemo oldStock;
+    
     /**
      * Constructor for objects of class StockApp
      */
@@ -21,6 +23,7 @@ public class StockApp
     {
         input = new InputReader();
         manager = new StockManager();
+        oldStock = new StockDemo(manager);
     }
 
     /**
@@ -94,7 +97,7 @@ public class StockApp
     */ 
    private void printAllProducts()
    {
-       
+       manager.printAllProducts();
    }
    
    /**
