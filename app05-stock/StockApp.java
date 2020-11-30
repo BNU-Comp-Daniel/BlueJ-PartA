@@ -12,12 +12,15 @@ public class StockApp
     // Use to get user input
     private InputReader input;
     
+    private StockManager manager;
+    
     /**
      * Constructor for objects of class StockApp
      */
     public StockApp()
     {
         input = new InputReader();
+        manager = new StockManager();
     }
 
     /**
@@ -41,17 +44,61 @@ public class StockApp
             printMenuChoices();
            
             String choice = input.getInput();
+            choice= choice.toLowerCase();
             
             if(choice.equals("quit"))
             {
                 finished = true;
             }
+            else
+            {
+                executeMenuChoice(choice);
+            }
         }
     }
     
+   private void executeMenuChoice(String choice)
+   {
+       if(choice.equals("add"))
+       {
+           addProduct();
+       }
+       else if(choice.equals("remove"))
+       {
+           removeProduct();
+       }
+       else if(choice.equals("printall"))
+       {
+           printAllProducts();
+       }
+   }
    
-    /**
-     * Print out a menu of operation choices
+   /**
+    * 
+    */ 
+   private void addProduct()
+   {
+       
+   }
+   
+   /**
+    * 
+    */ 
+   private void removeProduct()
+   {
+       
+   }
+   
+   /**
+    * 
+    */ 
+   private void printAllProducts()
+   {
+       
+   }
+   
+   /**
+      * Print out a menu of operation choices
      */
     private void printMenuChoices()
     {
