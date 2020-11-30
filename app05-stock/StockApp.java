@@ -74,7 +74,7 @@ public class StockApp
    }
    
    /**
-    * 
+    * Method that adds products.
     */ 
    private void addProduct()
    {
@@ -82,7 +82,7 @@ public class StockApp
    }
    
    /**
-    * 
+    * Method that removes products.
     */ 
    private void removeProduct()
    {
@@ -90,7 +90,7 @@ public class StockApp
    }
    
    /**
-    * 
+    * Method that prints out all products.
     */ 
    private void printAllProducts()
    {
