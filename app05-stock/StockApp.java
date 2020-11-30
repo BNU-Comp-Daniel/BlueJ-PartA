@@ -10,7 +10,7 @@
 public class StockApp
 {
     // Use to get user input
-    private InputReader input;
+    private InputReader reader;
     
     private StockManager manager;
     
@@ -21,7 +21,7 @@ public class StockApp
      */
     public StockApp()
     {
-        input = new InputReader();
+        reader = new InputReader();
         manager = new StockManager();
         oldStock = new StockDemo(manager);
     }
@@ -46,7 +46,7 @@ public class StockApp
             printHeading();
             printMenuChoices();
            
-            String choice = input.getInput();
+            String choice = reader.getInput();
             choice= choice.toLowerCase();
             
             if(choice.equals("quit"))
@@ -81,7 +81,19 @@ public class StockApp
     */ 
    private void addProduct()
    {
+       System.out.println("\nAdding a new product!\n");
        
+       System.out.println("Please enter the product ID");
+       String value = reader.getInput();
+       int id = Integer.parseInt(value);
+       
+       System.out.println("Please enter the product name ");
+       String name = reader.getInput();
+       
+       Product product = new Product(id, name);
+       System.out.println("Added new product " + product);
+       
+       manager.addProduct(product);
    }
    
    /**
