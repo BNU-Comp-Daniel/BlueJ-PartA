@@ -27,7 +27,14 @@ public class StockManager
      */
     public void addProduct(Product item)
     {
-        stock.add(item);
+        if(findProduct(item.getID()) != null)
+        {
+            System.out.println("This product has a duplicated id!");
+        }
+        else
+        {
+           stock.add(item);
+        }
     }
     
     /**
