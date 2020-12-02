@@ -34,7 +34,7 @@ public class StockApp
     }
 
     /**
-     * 
+     * Runs the program.
      */
     public void run()
     {
@@ -42,7 +42,7 @@ public class StockApp
     }
     
     /**
-     * 
+     * This brings up the header and the menu with the different choices.
      */
     public void getMenuChoice()
     {
@@ -67,7 +67,10 @@ public class StockApp
         }
     }
     
-   private void executeMenuChoice(String choice)
+   /**
+    * Allows user to type in what they want to do.
+    */
+    private void executeMenuChoice(String choice)
    {
        if(choice.equals(ADD))
        {
