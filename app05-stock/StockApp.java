@@ -42,12 +42,6 @@ public class StockApp
         menuChoices = new String []
         {
         "Add a new product",
-        "Deliver a product",
-        "Sell a product",
-        "Search for a product",
-        "Print list of low stock levels",
-        "Re-stock a product",
-        "Remove an old product",
         "Print all products",
         "Quit the program",
         };
@@ -143,17 +137,12 @@ public class StockApp
    }
    
    /**
-      * Print out a menu of operation choices
-     */
+    * Print out a menu of operation choices
+    */
     private void printMenuChoices()
     {
         System.out.println();
         System.out.println("    Add:        Add a new product");
-        System.out.println("    Deliver:    Deliver a product");
-        System.out.println("    Sell:       Sell a product");
-        System.out.println("    Search:     Search for a product");
-        System.out.println("    Low Stock:  Print list of low stock levels");
-        System.out.println("    Re-Stock:   Re-stock a product");
         System.out.println("    Remove:     Remove an old product");
         System.out.println("    PrintAll:   Print all products");
         System.out.println("    Quit:       Quit the program");
