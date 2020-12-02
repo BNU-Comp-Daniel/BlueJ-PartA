@@ -10,7 +10,10 @@
 public class StockApp
 {
     public final int FIRST_ID = 200;
-    
+    public final String ADD = "add";
+    public final String REMOVE = "remove";
+    public final String QUIT = "quit";
+    public final String PRINTALL = "printall";
     // Use to get user input
     private InputReader reader;
     
@@ -53,7 +56,7 @@ public class StockApp
             String choice = reader.getInput();
             choice= choice.toLowerCase();
             
-            if(choice.equals("quit"))
+            if(choice.equals(QUIT))
             {
                 finished = true;
             }
@@ -66,15 +69,15 @@ public class StockApp
     
    private void executeMenuChoice(String choice)
    {
-       if(choice.equals("add"))
+       if(choice.equals(ADD))
        {
            addProduct();
        }
-       else if(choice.equals("remove"))
+       else if(choice.equals(REMOVE))
        {
            removeProduct();
        }
-       else if(choice.equals("printall"))
+       else if(choice.equals(PRINTALL))
        {
            printAllProducts();
        }
