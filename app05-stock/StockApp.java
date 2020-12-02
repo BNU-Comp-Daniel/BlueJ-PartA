@@ -9,12 +9,16 @@
  */
 public class StockApp
 {
+    public final int FIRST_ID = 200;
+    
     // Use to get user input
     private InputReader reader;
     
     private StockManager manager;
     
-    private StockDemo oldStock;
+    private StockDemo demo;
+    
+    private int nextID = FIRST_ID;
     
     /**
      * Constructor for objects of class StockApp
@@ -23,7 +27,7 @@ public class StockApp
     {
         reader = new InputReader();
         manager = new StockManager();
-        oldStock = new StockDemo(manager);
+        demo = new StockDemo(manager);
     }
 
     /**
@@ -101,7 +105,14 @@ public class StockApp
     */ 
    private void removeProduct()
    {
+       System.out.println("\nRemove a product!\n");
        
+       System.out.println("Please enter the product ID");
+       String number = reader.getInput();
+       
+       int id = Integer.parseInt(number);
+       
+       manager.removeProduct(id);
    }
    
    /**
@@ -119,6 +130,11 @@ public class StockApp
     {
         System.out.println();
         System.out.println("    Add:        Add a new product");
+        System.out.println("    Deliver:    Deliver a product");
+        System.out.println("    Sell:       Sell a product");
+        System.out.println("    Search:     Search for a product");
+        System.out.println("    Low Stock:  Print list of low stock levels");
+        System.out.println("    Re-Stock:   Re-stock a product");
         System.out.println("    Remove:     Remove an old product");
         System.out.println("    PrintAll:   Print all products");
         System.out.println("    Quit:       Quit the program");

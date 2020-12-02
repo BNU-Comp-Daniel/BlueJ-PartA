@@ -1,0 +1,102 @@
+Program.main();
+******************************
+ Stock Management Application 
+    App05: by Daniel Hale
+******************************
+
+    Add:        Add a new product
+    Deliver:    Deliver a product
+    Sell:       Sell a product
+    Search:     Search for a product
+    Low Stock:  Print list of low stock levels
+    Re-Stock:   Re-stock a product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> printall
+
+Hale's Stock List
+=================
+
+101: Playstation 5 stock level: 0
+102: Xbox Series X stock level: 0
+103: Google Stadia stock level: 0
+104: Nintendo Switch stock level: 0
+105: Apple iPhone X stock level: 0
+106: Samsung Galaxy S20 stock level: 0
+107: Playstation 4 Pro stock level: 0
+108: Playstation 3 Slim stock level: 0
+109: Xbox 360 Elite stock level: 0
+110: Gamecube stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Daniel Hale
+******************************
+
+    Add:        Add a new product
+    Deliver:    Deliver a product
+    Sell:       Sell a product
+    Search:     Search for a product
+    Low Stock:  Print list of low stock levels
+    Re-Stock:   Re-stock a product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> remove
+
+Remove a product!
+
+Please enter the product ID
+> 101
+
+Product 101: Playstation 5 stock level: 0 removed!
+
+******************************
+ Stock Management Application 
+    App05: by Daniel Hale
+******************************
+
+    Add:        Add a new product
+    Deliver:    Deliver a product
+    Sell:       Sell a product
+    Search:     Search for a product
+    Low Stock:  Print list of low stock levels
+    Re-Stock:   Re-stock a product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> printall
+
+Hale's Stock List
+=================
+
+102: Xbox Series X stock level: 0
+103: Google Stadia stock level: 0
+104: Nintendo Switch stock level: 0
+105: Apple iPhone X stock level: 0
+106: Samsung Galaxy S20 stock level: 0
+107: Playstation 4 Pro stock level: 0
+108: Playstation 3 Slim stock level: 0
+109: Xbox 360 Elite stock level: 0
+110: Gamecube stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Daniel Hale
+******************************
+
+    Add:        Add a new product
+    Deliver:    Deliver a product
+    Sell:       Sell a product
+    Search:     Search for a product
+    Low Stock:  Print list of low stock levels
+    Re-Stock:   Re-stock a product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> quit

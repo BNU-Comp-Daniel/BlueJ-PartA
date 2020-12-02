@@ -54,6 +54,25 @@ public class StockManager
     }
     
     /**
+     * Receive a delivery of a particular product.
+     * Increase the quantity of the product by the given amount.
+     * @param id The ID of the product.
+     * @param amount The amount to increase the quantity by.
+     */
+    public void removeProduct(int id)
+    {
+        Product product = findProduct(id);
+        
+        if(product != null)
+        {
+            System.out.println("\nProduct " + product + " removed!\n");
+            stock.remove(product);
+        }
+        else
+            System.out.println("Invalid Product ID = " + id);  
+    }
+    
+    /**
      * Try to find a product in the stock with the given id.
      * @return The identified product, or null if there is none
      *         with a matching ID.
